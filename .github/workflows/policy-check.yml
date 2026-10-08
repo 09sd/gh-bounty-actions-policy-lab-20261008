@@ -1,0 +1,10 @@
+name: Policy boundary marker
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo GH_BOUNTY_ACTION_POLICY_MARKER_20261008_M4Q7
