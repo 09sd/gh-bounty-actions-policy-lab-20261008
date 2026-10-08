@@ -1,6 +1,8 @@
 name: Policy boundary marker
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
 permissions:
   contents: read
 jobs:
