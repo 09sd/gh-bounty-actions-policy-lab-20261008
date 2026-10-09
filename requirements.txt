@@ -1,2 +1,0 @@
-# Harmless bounty test fixture; not installed or deployed.
-Django==2.0.0
