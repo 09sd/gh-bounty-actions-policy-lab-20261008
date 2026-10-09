@@ -9,7 +9,7 @@ permissions:
   contents: read
 jobs:
   seed:
-    if: github.event_name == "push"
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     cache-mode: write
     steps:
@@ -21,7 +21,7 @@ jobs:
           path: cache-probe
           key: gh-bounty-cache-mode-20261009
   attempt:
-    if: github.event_name == "issues"
+    if: github.event_name == 'issues'
     runs-on: ubuntu-latest
     cache-mode: none
     steps:
