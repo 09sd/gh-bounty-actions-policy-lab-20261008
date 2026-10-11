@@ -1,0 +1,12 @@
+name: Harmless cross-repository npm OIDC boundary probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  call_trusted_publisher:
+    uses: miknutty2/actions-policy-call-poc-0b64bb15d5/.github/workflows/ghb-npm-oidc.yml@094567ae7e585a1f3026571e248f77ad80659a44
+    permissions:
+      contents: read
+      id-token: write
